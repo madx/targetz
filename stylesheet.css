@@ -1,0 +1,129 @@
+body {
+  margin: 0 auto;
+  width: 60%;
+  font-family: "DejaVu Sans", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  background: black;
+  color: white;
+  padding: 0.2em 0.5em;
+  font-size: 2em;
+}
+
+#form {
+  margin: 0 auto;
+  background-color: #e0ff33;
+  border: 2px solid #b8d22c;
+  border-top: none;
+  color: #4a5411;
+  padding: 0.5em 1em;
+  position: relative;
+  height: 2em;
+}
+#form ul {
+  margin: 0;
+}
+#form li {
+  list-style-type: none;
+  display: block;
+}
+#form li#slug_li, #form li#url_li, #form li#desc_li, #form li#submit_li {
+  position: absolute;
+  padding-top: 0.5em;
+}
+#form li#slug_li {
+  top: 0;
+  left: 1%;
+  width: 15%;
+}
+#form li#url_li {
+  top: 0;
+  left: 19%;
+  width: 32%;
+}
+#form li#desc_li {
+  top: 0;
+  left: 54%;
+  width: 32%;
+}
+#form li#slug_li input, #form li#url_li input, #form li#desc_li input {
+  width: 100%;
+  border: 1px solid #4a5411;
+  background-color: #f5ffa4;
+  color: #4a5411;
+  height: 1.3em;
+  padding: 0.2em;
+}
+#form li#submit_li {
+  top: 0;
+  right: 1%;
+  width: 10%;
+}
+#form li#submit_li input {
+  width: 100%;
+  font-weight: bold;
+  background-color: #4a5411;
+  color: #f5ffa4;
+  border: none;
+  margin-top: 0.2em;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+#form li#submit_li input:hover {
+  cursor: pointer;
+  background-color: #5e6825;
+}
+
+#slugs {
+  clear: left;
+  margin: 1.5% 5% 2%;
+}
+#slugs ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#slugs ul li {
+  border: 1px solid #aeb875;
+  background-color: #f5ffa4;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  position: relative;
+}
+#slugs ul li > a, #slugs ul li > a:visited {
+  color: white;
+  padding: 2px 0.5em;
+  text-decoration: none;
+  background-color: #4a5411;
+  font-weight: bold;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  margin-right: 8px;
+}
+#slugs ul li > a:hover, #slugs ul li > a:active, #slugs ul li > a:focus, #slugs ul li > a:visited:hover, #slugs ul li > a:visited:active, #slugs ul li > a:visited:focus {
+  background-color: #5e6825;
+}
+#slugs ul li span.desc {
+  margin-right: 8px;
+}
+#slugs ul li kbd {
+  font-size: 0.8em;
+  font-family: "DejaVu Sans Mono", monospace;
+  color: #555;
+}
+#slugs ul li .actions {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+#slugs ul li .actions a.delete {
+  padding: 2px;
+  color: red;
+  text-decoration: none;
+}
+#slugs ul li .actions a.delete:hover, #slugs ul li .actions a.delete:active, #slugs ul li .actions a.delete:focus {
+  background-color: red;
+  color: white;
+}
